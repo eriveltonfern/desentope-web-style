@@ -49,7 +49,7 @@ function Index() {
       {/* Header */}
       <div className="bg-hazard text-hazard-foreground text-xs sm:text-sm font-bold tracking-wider uppercase">
         <div className="container mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
-          <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> Atendimento 24h — Todos os dias</span>
+          <span className="flex items-center gap-2"><Zap className="w-4 h-4" /> Plantão 24h ativo agora — Resposta em até 30 min</span>
           <a href={TEL} className="flex items-center gap-2 hover:underline">
             <Phone className="w-4 h-4" /> {PHONE}
           </a>
