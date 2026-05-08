@@ -404,7 +404,7 @@ function Index() {
         <div className="container mx-auto px-4 py-14 grid md:grid-cols-4 gap-10">
           <div>
             <img src={logo} alt="Desentupidora Nuclear" className="h-12 w-auto mb-4" />
-            <p className="text-sm text-muted-foreground">Força e tecnologia para resolver entupimentos. Atendimento 24h em toda a região metropolitana.</p>
+            <p className="text-sm text-muted-foreground">Desentupimento sério, com hidrojato profissional, equipe própria e garantia escrita. 24h em toda a Grande SP.</p>
           </div>
           <div>
             <div className="font-display font-bold uppercase tracking-wider text-sm text-hazard mb-3">Soluções</div>
