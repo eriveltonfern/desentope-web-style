@@ -205,21 +205,21 @@ function Index() {
           <div>
             <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Quem somos</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none mb-6">
-              Tradição, força e <span className="text-hazard">tecnologia</span>.
+              +15 anos tirando gente do <span className="text-hazard">sufoco</span>.
             </h2>
             <p className="text-muted-foreground text-lg mb-4">
-              A Desentupidora Nuclear nasceu para entregar um serviço sério em um setor cheio de improviso.
-              Há mais de 15 anos, somos referência em desentupimento e limpeza de fossa em toda a região metropolitana.
+              A Nuclear nasceu cansada de ouvir histórias de cliente enganado, serviço mal feito e taxa surpresa.
+              Por isso fazemos diferente: equipe própria, equipamento de ponta e palavra que se cumpre.
             </p>
             <p className="text-muted-foreground text-lg mb-8">
-              Investimos em equipamento profissional, treinamento contínuo da equipe e atendimento humanizado.
-              Quando você chama a Nuclear, chega um time uniformizado, equipado e pronto para resolver.
+              Mais de <span className="text-foreground font-semibold">10 mil atendimentos</span> em residências, comércios e indústrias.
+              Quando a Nuclear chega, o problema vai embora — com nota fiscal, garantia e o respeito que você merece.
             </p>
             <div className="grid grid-cols-3 gap-6">
               {[
-                { n: "+15", l: "Anos no mercado" },
-                { n: "+10k", l: "Atendimentos" },
-                { n: "98%", l: "Aprovação" },
+                { n: "+15", l: "Anos de estrada" },
+                { n: "+10k", l: "Clientes atendidos" },
+                { n: "98%", l: "Voltariam a chamar" },
               ].map((s) => (
                 <div key={s.l} className="border-l-4 border-hazard pl-3">
                   <div className="font-display font-black text-3xl text-hazard">{s.n}</div>
@@ -233,14 +233,14 @@ function Index() {
               <div>
                 <Clock className="w-16 h-16 text-hazard mb-4" strokeWidth={1.5} />
                 <div className="font-display font-black uppercase text-7xl md:text-8xl text-hazard leading-none">24H</div>
-                <div className="font-display font-bold uppercase text-2xl text-foreground mt-2">Todos os dias</div>
+                <div className="font-display font-bold uppercase text-2xl text-foreground mt-2">A Nuclear nunca dorme</div>
               </div>
               <p className="text-muted-foreground text-sm">
-                Domingo, feriado, madrugada. A Desentupidora Nuclear nunca para.
+                Enquanto outras desentupidoras só voltam segunda-feira, a gente está saindo com a van agora.
               </p>
               <a href={WHATS} target="_blank" rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-hazard text-hazard-foreground py-3 font-display font-bold uppercase tracking-wider hover:opacity-90 transition">
-                <MessageCircle className="w-4 h-4" /> Falar agora
+                <MessageCircle className="w-4 h-4" /> Quero atendimento agora
               </a>
             </div>
           </div>
