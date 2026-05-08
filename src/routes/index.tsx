@@ -180,14 +180,14 @@ function Index() {
       </section>
 
       {/* Como Funciona */}
-      <Section id="como-funciona" eyebrow="Processo" title="Como" accent="funciona"
-        kicker="Do primeiro contato à entrega da garantia, nosso processo é direto, transparente e rápido.">
+      <Section id="como-funciona" eyebrow="Rápido e sem mistério" title="Em 4 passos" accent="seu problema some"
+        kicker="Do primeiro 'oi' no WhatsApp à garantia assinada na sua mão. Tudo no mesmo dia, do seu jeito.">
         <div className="grid md:grid-cols-4 gap-6 relative">
           {[
-            { icon: PhoneCall, n: "01", title: "Você chama", desc: "Ligue ou mande mensagem no WhatsApp. Atendimento imediato." },
-            { icon: Search, n: "02", title: "Diagnóstico", desc: "Nossa equipe avalia o problema no local e apresenta o orçamento." },
-            { icon: Wrench, n: "03", title: "Execução", desc: "Resolvemos com equipamento profissional e segurança." },
-            { icon: ShieldCheck, n: "04", title: "Garantia", desc: "Entregamos limpo e com garantia escrita de até 90 dias." },
+            { icon: PhoneCall, n: "01", title: "Você chama", desc: "Mensagem no WhatsApp ou ligação. Respondemos em minutos, dia ou noite." },
+            { icon: Search, n: "02", title: "Diagnóstico na hora", desc: "Equipe vai até você, identifica a causa e fecha o orçamento — antes de iniciar." },
+            { icon: Wrench, n: "03", title: "Resolvemos hoje", desc: "Hidrojato, sonda elétrica, câmera. O que for preciso para destravar de uma vez." },
+            { icon: ShieldCheck, n: "04", title: "Garantia na mão", desc: "Local limpo, recibo emitido e até 90 dias de garantia escrita. Tudo certo." },
           ].map(({ icon: Icon, n, title, desc }) => (
             <div key={n} className="relative bg-card border border-border p-7">
               <div className="absolute -top-4 -left-2 font-display font-black text-7xl text-hazard/20 leading-none">{n}</div>
