@@ -304,13 +304,13 @@ function Index() {
       </section>
 
       {/* Depoimentos */}
-      <Section id="depoimentos" eyebrow="Clientes" title="O que dizem nossos" accent="clientes"
-        kicker="A nota que importa é a do cliente que voltou a usar a pia em paz.">
+      <Section id="depoimentos" eyebrow="Quem chamou, indica" title="Resolveu o problema." accent="Conquistou o cliente."
+        kicker="Mais de 10 mil atendimentos e nota 4,9 nas avaliações. Veja o que dizem quem já passou pelo aperto que você está agora.">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { n: "Marina S.", c: "Vila Mariana", t: "Atenderam às 2h da manhã, em pleno feriado. Equipe educada, resolveu rapidíssimo. Salvaram minha cozinha." },
-            { n: "Carlos R.", c: "Santo André", t: "Já chamei outras desentupidoras e sempre era enrolação. A Nuclear chegou no horário e resolveu na primeira visita." },
-            { n: "Juliana A.", c: "Tatuapé", t: "Profissionais sérios, uniformizados e com equipamento de verdade. O preço foi justo e ainda deram garantia." },
+            { n: "Marina S.", c: "Vila Mariana", t: "Atenderam às 2h da manhã, em pleno feriado. Em 40 minutos a equipe estava aqui e resolveu. Salvaram minha cozinha." },
+            { n: "Carlos R.", c: "Santo André", t: "Chamei três desentupidoras antes. Só a Nuclear chegou no horário, fechou o preço antes e resolveu na primeira visita." },
+            { n: "Juliana A.", c: "Tatuapé", t: "Equipe educada, uniformizada e com equipamento sério. Pagaram a luz da minha cozinha de novo. Recomendo de olhos fechados." },
           ].map((d) => (
             <div key={d.n} className="bg-card border border-border p-7 relative">
               <div className="flex gap-1 mb-4">
