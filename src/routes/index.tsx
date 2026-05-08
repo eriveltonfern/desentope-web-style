@@ -129,16 +129,16 @@ function Index() {
       </section>
 
       {/* Nossas Soluções */}
-      <Section id="solucoes" eyebrow="O que fazemos" title="Nossas" accent="soluções"
-        kicker="Atendemos residências, comércios e indústrias com equipamento de ponta e equipe treinada para qualquer tipo de obstrução.">
+      <Section id="solucoes" eyebrow="O que resolvemos hoje" title="Diga o problema." accent="A gente resolve."
+        kicker="Não importa se é pia trancada às 3h da manhã ou esgoto transbordando no comércio: temos o equipamento certo e a equipe pronta para chegar e desentupir na primeira visita.">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { icon: Droplets, title: "Desentupimento de pias", desc: "Cozinhas, banheiros e áreas de serviço com gordura e resíduos acumulados." },
-            { icon: Wrench, title: "Vasos sanitários", desc: "Remoção de obstruções com equipamento adequado, sem quebrar pisos." },
-            { icon: Zap, title: "Ralos e tubulações", desc: "Hidrojateamento de alta pressão para limpeza profunda." },
-            { icon: Truck, title: "Caixa de gordura e fossa", desc: "Limpeza completa, sucção e destinação correta dos resíduos." },
-            { icon: ShieldCheck, title: "Esgoto residencial", desc: "Diagnóstico com câmera e desobstrução de redes principais." },
-            { icon: Camera, title: "Inspeção com câmera", desc: "Localizamos a obstrução com precisão antes de qualquer intervenção." },
+            { icon: Droplets, title: "Pia entupida", desc: "Cozinha parada, banheiro alagado? Removemos gordura e resíduos sem quebrar nada." },
+            { icon: Wrench, title: "Vaso sanitário", desc: "Desentupimos com segurança e sem sujeira — você usa o banheiro no mesmo dia." },
+            { icon: Zap, title: "Ralo e tubulação", desc: "Hidrojato de alta pressão que limpa por dentro e evita o próximo entupimento." },
+            { icon: Truck, title: "Caixa de gordura e fossa", desc: "Sucção completa, descarte legal e local higienizado. Adeus mau cheiro." },
+            { icon: ShieldCheck, title: "Esgoto transbordando", desc: "Diagnóstico com câmera + desobstrução da rede principal antes do prejuízo crescer." },
+            { icon: Camera, title: "Inspeção com câmera", desc: "Mostramos o problema na sua tela. Nada de orçamento no escuro." },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title}
               className="group bg-card border border-border p-7 hover:border-hazard transition-all relative overflow-hidden">
