@@ -332,20 +332,21 @@ function Index() {
       <section id="faq" className="py-20 md:py-28 bg-secondary">
         <div className="container mx-auto px-4 grid md:grid-cols-[1fr_2fr] gap-12">
           <div>
-            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Dúvidas</div>
+            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Antes de chamar</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-5xl leading-none">
-              Perguntas <span className="text-hazard">frequentes</span>
+              Tira a dúvida e <span className="text-hazard">chama</span>.
             </h2>
-            <p className="mt-4 text-muted-foreground">Não achou sua dúvida? Fale com a gente no WhatsApp.</p>
+            <p className="mt-4 text-muted-foreground">Não achou aqui? Mande no WhatsApp — respondemos em minutos, sem compromisso.</p>
           </div>
           <div className="space-y-3">
             {[
-              { q: "Vocês atendem 24h de verdade?", a: "Sim. Atendemos 24 horas, todos os dias do ano, inclusive feriados e madrugadas." },
-              { q: "Cobram taxa de visita?", a: "Não. O orçamento é gratuito e sem compromisso. Você só paga se autorizar o serviço." },
-              { q: "Precisa quebrar piso ou parede?", a: "Na grande maioria dos casos, não. Usamos equipamento que desobstrui sem quebra." },
-              { q: "Qual a garantia?", a: "Oferecemos garantia escrita de até 90 dias no serviço executado." },
-              { q: "Quais regiões atendem?", a: "Toda a Região Metropolitana de São Paulo, capital e Grande SP." },
-              { q: "Quais formas de pagamento?", a: "Aceitamos PIX, dinheiro, cartão de débito e crédito." },
+              { q: "Vocês atendem 24h de verdade mesmo?", a: "Sim, com técnicos de plantão todos os dias do ano. Madrugada, domingo, feriado de Natal — basta chamar." },
+              { q: "Quanto tempo até chegar?", a: "Em emergências na Grande SP, costumamos chegar entre 30 e 60 minutos do seu chamado." },
+              { q: "Cobram taxa de visita ou orçamento?", a: "Não. Vamos até você, avaliamos e fechamos o preço. Você só paga se autorizar — e o serviço é feito na hora." },
+              { q: "Vão precisar quebrar piso ou parede?", a: "Quase nunca. Usamos hidrojato, sondas elétricas e câmera para resolver sem destruir nada. Se houver risco, avisamos antes." },
+              { q: "Que garantia vocês dão?", a: "Garantia escrita de até 90 dias. Se o entupimento voltar no mesmo ponto, voltamos sem cobrar." },
+              { q: "Quais regiões atendem?", a: "Capital de SP e toda a Grande São Paulo, do ABC à Zona Norte. Confirme seu bairro pelo WhatsApp." },
+              { q: "Como posso pagar?", a: "PIX, dinheiro, débito e crédito (à vista ou parcelado). Emitimos nota fiscal em todos os serviços." },
             ].map((f, i) => {
               const open = openFaq === i;
               return (
