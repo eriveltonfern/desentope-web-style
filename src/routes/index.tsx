@@ -248,13 +248,13 @@ function Index() {
       </section>
 
       {/* Serviços Realizados */}
-      <Section id="realizados" eyebrow="Onde atuamos" title="Serviços" accent="realizados"
-        kicker="Atendemos diferentes perfis de cliente com a mesma qualidade técnica.">
+      <Section id="realizados" eyebrow="Para qualquer obra ou imóvel" title="Sua estrutura," accent="nossa especialidade."
+        kicker="Mesmo time, mesma garantia, mesmo nível técnico — seja para destravar a pia da sua casa ou liberar a rede principal de uma fábrica.">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: Home, title: "Residencial", items: ["Casas e apartamentos", "Pias, ralos e vasos", "Caixas de gordura"] },
-            { icon: Building2, title: "Comercial", items: ["Restaurantes e bares", "Escritórios e lojas", "Condomínios"] },
-            { icon: Factory, title: "Industrial", items: ["Galpões e fábricas", "Redes de grande porte", "Hidrojato industrial"] },
+            { icon: Home, title: "Residencial", items: ["Atendimento na hora, sem agenda", "Pias, ralos, vasos e caixas", "Equipe que respeita sua casa"] },
+            { icon: Building2, title: "Comercial", items: ["Restaurantes sem parar a operação", "Condomínios com NF e contrato", "Lojas, escritórios e clínicas"] },
+            { icon: Factory, title: "Industrial", items: ["Hidrojato de alta vazão", "Redes de grande porte", "Manutenção preventiva programada"] },
           ].map(({ icon: Icon, title, items }) => (
             <div key={title} className="bg-card border border-border p-8 hover:border-hazard transition">
               <Icon className="w-12 h-12 text-hazard mb-5" strokeWidth={1.5} />
