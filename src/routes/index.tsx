@@ -156,17 +156,18 @@ function Index() {
         <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-hazard/5 blur-3xl" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mb-12">
-            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Diferenciais</div>
+            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Por que somos diferentes</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none">
-              Potência que <span className="text-hazard">resolve</span>.
+              Chegamos rápido. <span className="text-hazard">Resolvemos de verdade.</span>
             </h2>
+            <p className="mt-4 text-muted-foreground text-lg">Sem improviso, sem enrolação e sem aquela velha história de "amanhã eu volto".</p>
           </div>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: Clock, title: "24h reais", desc: "Domingo, feriado, madrugada. A gente atende." },
-              { icon: ShieldCheck, title: "Garantia 90 dias", desc: "Garantia escrita em todo serviço executado." },
-              { icon: Zap, title: "Hidrojateamento", desc: "Alta pressão para limpeza profunda da tubulação." },
-              { icon: DollarSign, title: "Sem taxa de visita", desc: "Orçamento gratuito e sem compromisso." },
+              { icon: Clock, title: "Plantão 24h real", desc: "Madrugada, domingo, feriado: tem técnico de prontidão para sair agora." },
+              { icon: ShieldCheck, title: "90 dias de garantia", desc: "Entupiu de novo no mesmo ponto? A gente volta sem cobrar nada." },
+              { icon: Zap, title: "Hidrojato de verdade", desc: "Equipamento profissional que dissolve a obstrução, não só empurra." },
+              { icon: DollarSign, title: "Zero taxa de visita", desc: "Orçamento na hora, fechado antes de começar. Sem surpresa na conta." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="border-2 border-border bg-background p-6 hover:border-hazard transition">
                 <Icon className="w-10 h-10 text-hazard mb-4" strokeWidth={1.5} />
