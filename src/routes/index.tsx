@@ -12,10 +12,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Desentupidora Nuclear — 24h | Força e Tecnologia" },
-      { name: "description", content: "Desentupidora Nuclear: atendimento 24h. Desentupimento de pias, ralos, vasos, esgoto e fossa. Hidrojateamento, câmera de inspeção e garantia." },
-      { property: "og:title", content: "Desentupidora Nuclear — Atendimento 24h" },
-      { property: "og:description", content: "Força e tecnologia para resolver entupimentos. Orçamento sem compromisso." },
+      { title: "Desentupidora Nuclear 24h — Resolve Hoje, com Garantia" },
+      { name: "description", content: "Entupiu? A Nuclear desentope agora: pia, vaso, ralo, esgoto e fossa. Hidrojato profissional, equipe em até 60 min, sem taxa de visita e 90 dias de garantia." },
+      { property: "og:title", content: "Entupiu? Nuclear 24h resolve hoje — com 90 dias de garantia" },
+      { property: "og:description", content: "Atendimento em minutos, orçamento na hora e sem taxa de visita. Chame agora pelo WhatsApp." },
     ],
   }),
 });
@@ -49,7 +49,7 @@ function Index() {
       {/* Header */}
       <div className="bg-hazard text-hazard-foreground text-xs sm:text-sm font-bold tracking-wider uppercase">
         <div className="container mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
-          <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> Atendimento 24h — Todos os dias</span>
+          <span className="flex items-center gap-2"><Zap className="w-4 h-4" /> Plantão 24h ativo agora — Resposta em até 30 min</span>
           <a href={TEL} className="flex items-center gap-2 hover:underline">
             <Phone className="w-4 h-4" /> {PHONE}
           </a>
@@ -84,29 +84,32 @@ function Index() {
         </div>
         <div className="relative container mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-hazard text-hazard-foreground px-3 py-1 mb-6 font-display font-bold uppercase text-xs tracking-widest">
-              <Zap className="w-3.5 h-3.5" /> Emergência 24h
+            <div className="inline-flex items-center gap-2 bg-hazard text-hazard-foreground px-3 py-1 mb-6 font-display font-bold uppercase text-xs tracking-widest animate-pulse">
+              <Zap className="w-3.5 h-3.5" /> Emergência? Atendemos em minutos
             </div>
             <h1 className="font-display font-black uppercase leading-[0.85] text-5xl sm:text-7xl md:text-8xl">
-              <span className="block text-foreground">Força e</span>
-              <span className="block text-hazard" style={{ textShadow: "0 0 40px oklch(0.85 0.18 95 / 0.3)" }}>tecnologia</span>
-              <span className="block text-foreground">para resolver</span>
-              <span className="block text-stroke">seu problema</span>
+              <span className="block text-foreground">Entupiu?</span>
+              <span className="block text-hazard" style={{ textShadow: "0 0 40px oklch(0.85 0.18 95 / 0.3)" }}>Desentope</span>
+              <span className="block text-foreground">agora.</span>
+              <span className="block text-stroke">Sem dor de cabeça.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl">
-              Desentupimento profissional de pias, ralos, vasos sanitários e redes de esgoto.
-              Equipamento de alta pressão, equipe técnica especializada e atendimento imediato.
+              Cada minuto de espera é um risco maior de transbordamento, mau cheiro e prejuízo.
+              <span className="text-foreground font-semibold"> Chame a Nuclear e resolva em 1 visita</span> — com hidrojato profissional, equipe uniformizada e <span className="text-hazard font-semibold">90 dias de garantia por escrito</span>.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href={WHATS} target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-3 bg-hazard text-hazard-foreground px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:translate-x-1 hover:-translate-y-1 transition-transform"
                 style={{ boxShadow: "var(--shadow-brutal)" }}>
-                <MessageCircle className="w-5 h-5" /> Chamar agora
+                <MessageCircle className="w-5 h-5" /> Resolver agora no WhatsApp
               </a>
               <a href={TEL}
                 className="inline-flex items-center gap-3 border-2 border-hazard text-hazard px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:bg-hazard hover:text-hazard-foreground transition">
-                <Phone className="w-5 h-5" /> {PHONE}
+                <Phone className="w-5 h-5" /> Ligar: {PHONE}
               </a>
+            </div>
+            <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <CheckCircle2 className="w-4 h-4 text-hazard" /> Orçamento grátis · Sem taxa de visita · Pagamento só após o serviço pronto
             </div>
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-lg">
               {[
@@ -126,16 +129,16 @@ function Index() {
       </section>
 
       {/* Nossas Soluções */}
-      <Section id="solucoes" eyebrow="O que fazemos" title="Nossas" accent="soluções"
-        kicker="Atendemos residências, comércios e indústrias com equipamento de ponta e equipe treinada para qualquer tipo de obstrução.">
+      <Section id="solucoes" eyebrow="O que resolvemos hoje" title="Diga o problema." accent="A gente resolve."
+        kicker="Não importa se é pia trancada às 3h da manhã ou esgoto transbordando no comércio: temos o equipamento certo e a equipe pronta para chegar e desentupir na primeira visita.">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { icon: Droplets, title: "Desentupimento de pias", desc: "Cozinhas, banheiros e áreas de serviço com gordura e resíduos acumulados." },
-            { icon: Wrench, title: "Vasos sanitários", desc: "Remoção de obstruções com equipamento adequado, sem quebrar pisos." },
-            { icon: Zap, title: "Ralos e tubulações", desc: "Hidrojateamento de alta pressão para limpeza profunda." },
-            { icon: Truck, title: "Caixa de gordura e fossa", desc: "Limpeza completa, sucção e destinação correta dos resíduos." },
-            { icon: ShieldCheck, title: "Esgoto residencial", desc: "Diagnóstico com câmera e desobstrução de redes principais." },
-            { icon: Camera, title: "Inspeção com câmera", desc: "Localizamos a obstrução com precisão antes de qualquer intervenção." },
+            { icon: Droplets, title: "Pia entupida", desc: "Cozinha parada, banheiro alagado? Removemos gordura e resíduos sem quebrar nada." },
+            { icon: Wrench, title: "Vaso sanitário", desc: "Desentupimos com segurança e sem sujeira — você usa o banheiro no mesmo dia." },
+            { icon: Zap, title: "Ralo e tubulação", desc: "Hidrojato de alta pressão que limpa por dentro e evita o próximo entupimento." },
+            { icon: Truck, title: "Caixa de gordura e fossa", desc: "Sucção completa, descarte legal e local higienizado. Adeus mau cheiro." },
+            { icon: ShieldCheck, title: "Esgoto transbordando", desc: "Diagnóstico com câmera + desobstrução da rede principal antes do prejuízo crescer." },
+            { icon: Camera, title: "Inspeção com câmera", desc: "Mostramos o problema na sua tela. Nada de orçamento no escuro." },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title}
               className="group bg-card border border-border p-7 hover:border-hazard transition-all relative overflow-hidden">
@@ -153,17 +156,18 @@ function Index() {
         <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-hazard/5 blur-3xl" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mb-12">
-            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Diferenciais</div>
+            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Por que somos diferentes</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none">
-              Potência que <span className="text-hazard">resolve</span>.
+              Chegamos rápido. <span className="text-hazard">Resolvemos de verdade.</span>
             </h2>
+            <p className="mt-4 text-muted-foreground text-lg">Sem improviso, sem enrolação e sem aquela velha história de "amanhã eu volto".</p>
           </div>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: Clock, title: "24h reais", desc: "Domingo, feriado, madrugada. A gente atende." },
-              { icon: ShieldCheck, title: "Garantia 90 dias", desc: "Garantia escrita em todo serviço executado." },
-              { icon: Zap, title: "Hidrojateamento", desc: "Alta pressão para limpeza profunda da tubulação." },
-              { icon: DollarSign, title: "Sem taxa de visita", desc: "Orçamento gratuito e sem compromisso." },
+              { icon: Clock, title: "Plantão 24h real", desc: "Madrugada, domingo, feriado: tem técnico de prontidão para sair agora." },
+              { icon: ShieldCheck, title: "90 dias de garantia", desc: "Entupiu de novo no mesmo ponto? A gente volta sem cobrar nada." },
+              { icon: Zap, title: "Hidrojato de verdade", desc: "Equipamento profissional que dissolve a obstrução, não só empurra." },
+              { icon: DollarSign, title: "Zero taxa de visita", desc: "Orçamento na hora, fechado antes de começar. Sem surpresa na conta." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="border-2 border-border bg-background p-6 hover:border-hazard transition">
                 <Icon className="w-10 h-10 text-hazard mb-4" strokeWidth={1.5} />
@@ -176,14 +180,14 @@ function Index() {
       </section>
 
       {/* Como Funciona */}
-      <Section id="como-funciona" eyebrow="Processo" title="Como" accent="funciona"
-        kicker="Do primeiro contato à entrega da garantia, nosso processo é direto, transparente e rápido.">
+      <Section id="como-funciona" eyebrow="Rápido e sem mistério" title="Em 4 passos" accent="seu problema some"
+        kicker="Do primeiro 'oi' no WhatsApp à garantia assinada na sua mão. Tudo no mesmo dia, do seu jeito.">
         <div className="grid md:grid-cols-4 gap-6 relative">
           {[
-            { icon: PhoneCall, n: "01", title: "Você chama", desc: "Ligue ou mande mensagem no WhatsApp. Atendimento imediato." },
-            { icon: Search, n: "02", title: "Diagnóstico", desc: "Nossa equipe avalia o problema no local e apresenta o orçamento." },
-            { icon: Wrench, n: "03", title: "Execução", desc: "Resolvemos com equipamento profissional e segurança." },
-            { icon: ShieldCheck, n: "04", title: "Garantia", desc: "Entregamos limpo e com garantia escrita de até 90 dias." },
+            { icon: PhoneCall, n: "01", title: "Você chama", desc: "Mensagem no WhatsApp ou ligação. Respondemos em minutos, dia ou noite." },
+            { icon: Search, n: "02", title: "Diagnóstico na hora", desc: "Equipe vai até você, identifica a causa e fecha o orçamento — antes de iniciar." },
+            { icon: Wrench, n: "03", title: "Resolvemos hoje", desc: "Hidrojato, sonda elétrica, câmera. O que for preciso para destravar de uma vez." },
+            { icon: ShieldCheck, n: "04", title: "Garantia na mão", desc: "Local limpo, recibo emitido e até 90 dias de garantia escrita. Tudo certo." },
           ].map(({ icon: Icon, n, title, desc }) => (
             <div key={n} className="relative bg-card border border-border p-7">
               <div className="absolute -top-4 -left-2 font-display font-black text-7xl text-hazard/20 leading-none">{n}</div>
@@ -201,21 +205,21 @@ function Index() {
           <div>
             <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Quem somos</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none mb-6">
-              Tradição, força e <span className="text-hazard">tecnologia</span>.
+              +15 anos tirando gente do <span className="text-hazard">sufoco</span>.
             </h2>
             <p className="text-muted-foreground text-lg mb-4">
-              A Desentupidora Nuclear nasceu para entregar um serviço sério em um setor cheio de improviso.
-              Há mais de 15 anos, somos referência em desentupimento e limpeza de fossa em toda a região metropolitana.
+              A Nuclear nasceu cansada de ouvir histórias de cliente enganado, serviço mal feito e taxa surpresa.
+              Por isso fazemos diferente: equipe própria, equipamento de ponta e palavra que se cumpre.
             </p>
             <p className="text-muted-foreground text-lg mb-8">
-              Investimos em equipamento profissional, treinamento contínuo da equipe e atendimento humanizado.
-              Quando você chama a Nuclear, chega um time uniformizado, equipado e pronto para resolver.
+              Mais de <span className="text-foreground font-semibold">10 mil atendimentos</span> em residências, comércios e indústrias.
+              Quando a Nuclear chega, o problema vai embora — com nota fiscal, garantia e o respeito que você merece.
             </p>
             <div className="grid grid-cols-3 gap-6">
               {[
-                { n: "+15", l: "Anos no mercado" },
-                { n: "+10k", l: "Atendimentos" },
-                { n: "98%", l: "Aprovação" },
+                { n: "+15", l: "Anos de estrada" },
+                { n: "+10k", l: "Clientes atendidos" },
+                { n: "98%", l: "Voltariam a chamar" },
               ].map((s) => (
                 <div key={s.l} className="border-l-4 border-hazard pl-3">
                   <div className="font-display font-black text-3xl text-hazard">{s.n}</div>
@@ -229,14 +233,14 @@ function Index() {
               <div>
                 <Clock className="w-16 h-16 text-hazard mb-4" strokeWidth={1.5} />
                 <div className="font-display font-black uppercase text-7xl md:text-8xl text-hazard leading-none">24H</div>
-                <div className="font-display font-bold uppercase text-2xl text-foreground mt-2">Todos os dias</div>
+                <div className="font-display font-bold uppercase text-2xl text-foreground mt-2">A Nuclear nunca dorme</div>
               </div>
               <p className="text-muted-foreground text-sm">
-                Domingo, feriado, madrugada. A Desentupidora Nuclear nunca para.
+                Enquanto outras desentupidoras só voltam segunda-feira, a gente está saindo com a van agora.
               </p>
               <a href={WHATS} target="_blank" rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-hazard text-hazard-foreground py-3 font-display font-bold uppercase tracking-wider hover:opacity-90 transition">
-                <MessageCircle className="w-4 h-4" /> Falar agora
+                <MessageCircle className="w-4 h-4" /> Quero atendimento agora
               </a>
             </div>
           </div>
@@ -244,13 +248,13 @@ function Index() {
       </section>
 
       {/* Serviços Realizados */}
-      <Section id="realizados" eyebrow="Onde atuamos" title="Serviços" accent="realizados"
-        kicker="Atendemos diferentes perfis de cliente com a mesma qualidade técnica.">
+      <Section id="realizados" eyebrow="Para qualquer obra ou imóvel" title="Sua estrutura," accent="nossa especialidade."
+        kicker="Mesmo time, mesma garantia, mesmo nível técnico — seja para destravar a pia da sua casa ou liberar a rede principal de uma fábrica.">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: Home, title: "Residencial", items: ["Casas e apartamentos", "Pias, ralos e vasos", "Caixas de gordura"] },
-            { icon: Building2, title: "Comercial", items: ["Restaurantes e bares", "Escritórios e lojas", "Condomínios"] },
-            { icon: Factory, title: "Industrial", items: ["Galpões e fábricas", "Redes de grande porte", "Hidrojato industrial"] },
+            { icon: Home, title: "Residencial", items: ["Atendimento na hora, sem agenda", "Pias, ralos, vasos e caixas", "Equipe que respeita sua casa"] },
+            { icon: Building2, title: "Comercial", items: ["Restaurantes sem parar a operação", "Condomínios com NF e contrato", "Lojas, escritórios e clínicas"] },
+            { icon: Factory, title: "Industrial", items: ["Hidrojato de alta vazão", "Redes de grande porte", "Manutenção preventiva programada"] },
           ].map(({ icon: Icon, title, items }) => (
             <div key={title} className="bg-card border border-border p-8 hover:border-hazard transition">
               <Icon className="w-12 h-12 text-hazard mb-5" strokeWidth={1.5} />
@@ -271,19 +275,19 @@ function Index() {
       <section className="py-20 md:py-28 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-12">
-            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Vantagens</div>
+            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Vantagens reais</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none">
-              Por que <span className="text-hazard">nos escolher</span>
+              6 motivos para parar de adiar e <span className="text-hazard">chamar agora</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
             {[
-              { icon: Award, t: "15+ anos de experiência", d: "Equipe que já viu de tudo, do entupimento simples ao caso mais complexo." },
-              { icon: Users, t: "Equipe uniformizada", d: "Profissionais identificados, educados e treinados para entrar na sua casa." },
-              { icon: Timer, t: "Resposta em minutos", d: "Atendimento ágil. A gente não enrola, chega e resolve." },
-              { icon: ShieldCheck, t: "Garantia escrita", d: "Até 90 dias de garantia em todo serviço executado." },
-              { icon: Sparkles, t: "Limpeza após o serviço", d: "Deixamos o local limpo como estava antes da nossa chegada." },
-              { icon: ThumbsUp, t: "Preço justo", d: "Orçamento transparente, sem taxas escondidas e sem surpresa." },
+              { icon: Award, t: "+15 anos sem improviso", d: "Já desentupimos mais de 10 mil casos. O seu, com certeza, a gente já viu antes." },
+              { icon: Users, t: "Equipe que você reconhece", d: "Técnicos uniformizados, identificados e treinados para entrar na sua casa com respeito." },
+              { icon: Timer, t: "Chega em até 60 minutos", d: "Frota distribuída pela cidade. Quando você liga, alguém já está saindo." },
+              { icon: ShieldCheck, t: "Garantia escrita de 90 dias", d: "Voltou a entupir no mesmo ponto? A gente volta sem custo nenhum." },
+              { icon: Sparkles, t: "Local mais limpo do que estava", d: "Nada de sujeira espalhada. Saímos só depois de higienizar tudo." },
+              { icon: ThumbsUp, t: "Preço fechado antes", d: "Orçamento na hora, por escrito. Sem 'apareceu um extra' no fim." },
             ].map(({ icon: Icon, t, d }) => (
               <div key={t} className="flex gap-4">
                 <div className="w-12 h-12 bg-hazard text-hazard-foreground flex-shrink-0 flex items-center justify-center">
@@ -300,13 +304,13 @@ function Index() {
       </section>
 
       {/* Depoimentos */}
-      <Section id="depoimentos" eyebrow="Clientes" title="O que dizem nossos" accent="clientes"
-        kicker="A nota que importa é a do cliente que voltou a usar a pia em paz.">
+      <Section id="depoimentos" eyebrow="Quem chamou, indica" title="Resolveu o problema." accent="Conquistou o cliente."
+        kicker="Mais de 10 mil atendimentos e nota 4,9 nas avaliações. Veja o que dizem quem já passou pelo aperto que você está agora.">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { n: "Marina S.", c: "Vila Mariana", t: "Atenderam às 2h da manhã, em pleno feriado. Equipe educada, resolveu rapidíssimo. Salvaram minha cozinha." },
-            { n: "Carlos R.", c: "Santo André", t: "Já chamei outras desentupidoras e sempre era enrolação. A Nuclear chegou no horário e resolveu na primeira visita." },
-            { n: "Juliana A.", c: "Tatuapé", t: "Profissionais sérios, uniformizados e com equipamento de verdade. O preço foi justo e ainda deram garantia." },
+            { n: "Marina S.", c: "Vila Mariana", t: "Atenderam às 2h da manhã, em pleno feriado. Em 40 minutos a equipe estava aqui e resolveu. Salvaram minha cozinha." },
+            { n: "Carlos R.", c: "Santo André", t: "Chamei três desentupidoras antes. Só a Nuclear chegou no horário, fechou o preço antes e resolveu na primeira visita." },
+            { n: "Juliana A.", c: "Tatuapé", t: "Equipe educada, uniformizada e com equipamento sério. Pagaram a luz da minha cozinha de novo. Recomendo de olhos fechados." },
           ].map((d) => (
             <div key={d.n} className="bg-card border border-border p-7 relative">
               <div className="flex gap-1 mb-4">
@@ -328,20 +332,21 @@ function Index() {
       <section id="faq" className="py-20 md:py-28 bg-secondary">
         <div className="container mx-auto px-4 grid md:grid-cols-[1fr_2fr] gap-12">
           <div>
-            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Dúvidas</div>
+            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Antes de chamar</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-5xl leading-none">
-              Perguntas <span className="text-hazard">frequentes</span>
+              Tira a dúvida e <span className="text-hazard">chama</span>.
             </h2>
-            <p className="mt-4 text-muted-foreground">Não achou sua dúvida? Fale com a gente no WhatsApp.</p>
+            <p className="mt-4 text-muted-foreground">Não achou aqui? Mande no WhatsApp — respondemos em minutos, sem compromisso.</p>
           </div>
           <div className="space-y-3">
             {[
-              { q: "Vocês atendem 24h de verdade?", a: "Sim. Atendemos 24 horas, todos os dias do ano, inclusive feriados e madrugadas." },
-              { q: "Cobram taxa de visita?", a: "Não. O orçamento é gratuito e sem compromisso. Você só paga se autorizar o serviço." },
-              { q: "Precisa quebrar piso ou parede?", a: "Na grande maioria dos casos, não. Usamos equipamento que desobstrui sem quebra." },
-              { q: "Qual a garantia?", a: "Oferecemos garantia escrita de até 90 dias no serviço executado." },
-              { q: "Quais regiões atendem?", a: "Toda a Região Metropolitana de São Paulo, capital e Grande SP." },
-              { q: "Quais formas de pagamento?", a: "Aceitamos PIX, dinheiro, cartão de débito e crédito." },
+              { q: "Vocês atendem 24h de verdade mesmo?", a: "Sim, com técnicos de plantão todos os dias do ano. Madrugada, domingo, feriado de Natal — basta chamar." },
+              { q: "Quanto tempo até chegar?", a: "Em emergências na Grande SP, costumamos chegar entre 30 e 60 minutos do seu chamado." },
+              { q: "Cobram taxa de visita ou orçamento?", a: "Não. Vamos até você, avaliamos e fechamos o preço. Você só paga se autorizar — e o serviço é feito na hora." },
+              { q: "Vão precisar quebrar piso ou parede?", a: "Quase nunca. Usamos hidrojato, sondas elétricas e câmera para resolver sem destruir nada. Se houver risco, avisamos antes." },
+              { q: "Que garantia vocês dão?", a: "Garantia escrita de até 90 dias. Se o entupimento voltar no mesmo ponto, voltamos sem cobrar." },
+              { q: "Quais regiões atendem?", a: "Capital de SP e toda a Grande São Paulo, do ABC à Zona Norte. Confirme seu bairro pelo WhatsApp." },
+              { q: "Como posso pagar?", a: "PIX, dinheiro, débito e crédito (à vista ou parcelado). Emitimos nota fiscal em todos os serviços." },
             ].map((f, i) => {
               const open = openFaq === i;
               return (
@@ -372,20 +377,21 @@ function Index() {
             }} />
             <div className="relative grid md:grid-cols-[1fr_auto] gap-8 items-center">
               <div>
-                <div className="font-display font-bold uppercase tracking-widest text-sm mb-3">Emergência?</div>
+                <div className="font-display font-bold uppercase tracking-widest text-sm mb-3 inline-flex items-center gap-2"><Zap className="w-4 h-4" /> Atenção: cada hora conta</div>
                 <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none">
-                  Não espere o problema piorar.
+                  Hoje é mais barato que amanhã.
                 </h2>
                 <p className="mt-4 text-base md:text-lg max-w-2xl opacity-90">
-                  Quanto mais tempo, maior o estrago. Chame a Nuclear agora e resolva ainda hoje.
+                  Entupimento ignorado vira esgoto na sala, piso estourado e conta triplicada.
+                  Resolva agora — equipe disponível neste exato momento, orçamento na hora e sem taxa de visita.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
-                <a href={TEL} className="inline-flex items-center gap-3 bg-background text-hazard px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:scale-105 transition">
-                  <Phone className="w-5 h-5" /> {PHONE}
+                <a href={WHATS} target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 bg-background text-hazard px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:scale-105 transition" style={{ boxShadow: "var(--shadow-brutal)" }}>
+                  <MessageCircle className="w-5 h-5" /> Quero atendimento agora
                 </a>
-                <a href={WHATS} target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 border-2 border-hazard-foreground px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:bg-hazard-foreground hover:text-hazard transition">
-                  <MessageCircle className="w-5 h-5" /> WhatsApp
+                <a href={TEL} className="inline-flex items-center gap-3 border-2 border-hazard-foreground px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:bg-hazard-foreground hover:text-hazard transition">
+                  <Phone className="w-5 h-5" /> Ligar: {PHONE}
                 </a>
               </div>
             </div>
@@ -398,7 +404,7 @@ function Index() {
         <div className="container mx-auto px-4 py-14 grid md:grid-cols-4 gap-10">
           <div>
             <img src={logo} alt="Desentupidora Nuclear" className="h-12 w-auto mb-4" />
-            <p className="text-sm text-muted-foreground">Força e tecnologia para resolver entupimentos. Atendimento 24h em toda a região metropolitana.</p>
+            <p className="text-sm text-muted-foreground">Desentupimento sério, com hidrojato profissional, equipe própria e garantia escrita. 24h em toda a Grande SP.</p>
           </div>
           <div>
             <div className="font-display font-bold uppercase tracking-wider text-sm text-hazard mb-3">Soluções</div>
