@@ -84,29 +84,32 @@ function Index() {
         </div>
         <div className="relative container mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-hazard text-hazard-foreground px-3 py-1 mb-6 font-display font-bold uppercase text-xs tracking-widest">
-              <Zap className="w-3.5 h-3.5" /> Emergência 24h
+            <div className="inline-flex items-center gap-2 bg-hazard text-hazard-foreground px-3 py-1 mb-6 font-display font-bold uppercase text-xs tracking-widest animate-pulse">
+              <Zap className="w-3.5 h-3.5" /> Emergência? Atendemos em minutos
             </div>
             <h1 className="font-display font-black uppercase leading-[0.85] text-5xl sm:text-7xl md:text-8xl">
-              <span className="block text-foreground">Força e</span>
-              <span className="block text-hazard" style={{ textShadow: "0 0 40px oklch(0.85 0.18 95 / 0.3)" }}>tecnologia</span>
-              <span className="block text-foreground">para resolver</span>
-              <span className="block text-stroke">seu problema</span>
+              <span className="block text-foreground">Entupiu?</span>
+              <span className="block text-hazard" style={{ textShadow: "0 0 40px oklch(0.85 0.18 95 / 0.3)" }}>Desentope</span>
+              <span className="block text-foreground">agora.</span>
+              <span className="block text-stroke">Sem dor de cabeça.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl">
-              Desentupimento profissional de pias, ralos, vasos sanitários e redes de esgoto.
-              Equipamento de alta pressão, equipe técnica especializada e atendimento imediato.
+              Cada minuto de espera é um risco maior de transbordamento, mau cheiro e prejuízo.
+              <span className="text-foreground font-semibold"> Chame a Nuclear e resolva em 1 visita</span> — com hidrojato profissional, equipe uniformizada e <span className="text-hazard font-semibold">90 dias de garantia por escrito</span>.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href={WHATS} target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-3 bg-hazard text-hazard-foreground px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:translate-x-1 hover:-translate-y-1 transition-transform"
                 style={{ boxShadow: "var(--shadow-brutal)" }}>
-                <MessageCircle className="w-5 h-5" /> Chamar agora
+                <MessageCircle className="w-5 h-5" /> Resolver agora no WhatsApp
               </a>
               <a href={TEL}
                 className="inline-flex items-center gap-3 border-2 border-hazard text-hazard px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:bg-hazard hover:text-hazard-foreground transition">
-                <Phone className="w-5 h-5" /> {PHONE}
+                <Phone className="w-5 h-5" /> Ligar: {PHONE}
               </a>
+            </div>
+            <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <CheckCircle2 className="w-4 h-4 text-hazard" /> Orçamento grátis · Sem taxa de visita · Pagamento só após o serviço pronto
             </div>
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-lg">
               {[
