@@ -59,7 +59,7 @@ function Index() {
       <header className="border-b border-border sticky top-0 z-40 bg-background/95 backdrop-blur">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-3">
-            <img src={logo} alt="Desentupidora Nuclear" className="h-12 sm:h-14 w-auto" />
+            <img src={logo} alt="Desentupidora Nuclear" className="h-16 sm:h-20 w-auto" />
           </a>
           <nav className="hidden lg:flex items-center gap-7 text-sm font-semibold uppercase tracking-wider">
             <a href="#solucoes" className="hover:text-hazard transition">Soluções</a>
