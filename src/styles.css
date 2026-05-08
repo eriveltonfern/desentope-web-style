@@ -61,10 +61,22 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.25rem;
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.98 0 0);
+  --hazard: oklch(0.85 0.18 95);
+  --hazard-foreground: oklch(0.08 0 0);
+  --danger: oklch(0.6 0.22 25);
+  --grit: oklch(0.15 0 0);
+  --gradient-hazard: linear-gradient(135deg, oklch(0.88 0.19 95) 0%, oklch(0.78 0.17 80) 100%);
+  --gradient-dark: linear-gradient(180deg, oklch(0.08 0 0) 0%, oklch(0.12 0.01 95) 100%);
+  --shadow-hazard: 0 10px 40px -10px oklch(0.85 0.18 95 / 0.4);
+  --shadow-brutal: 6px 6px 0 0 oklch(0.85 0.18 95);
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
