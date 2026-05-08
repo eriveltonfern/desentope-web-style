@@ -12,10 +12,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Desentupidora Nuclear — 24h | Força e Tecnologia" },
-      { name: "description", content: "Desentupidora Nuclear: atendimento 24h. Desentupimento de pias, ralos, vasos, esgoto e fossa. Hidrojateamento, câmera de inspeção e garantia." },
-      { property: "og:title", content: "Desentupidora Nuclear — Atendimento 24h" },
-      { property: "og:description", content: "Força e tecnologia para resolver entupimentos. Orçamento sem compromisso." },
+      { title: "Desentupidora Nuclear 24h — Resolve Hoje, com Garantia" },
+      { name: "description", content: "Entupiu? A Nuclear desentope agora: pia, vaso, ralo, esgoto e fossa. Hidrojato profissional, equipe em até 60 min, sem taxa de visita e 90 dias de garantia." },
+      { property: "og:title", content: "Entupiu? Nuclear 24h resolve hoje — com 90 dias de garantia" },
+      { property: "og:description", content: "Atendimento em minutos, orçamento na hora e sem taxa de visita. Chame agora pelo WhatsApp." },
     ],
   }),
 });
