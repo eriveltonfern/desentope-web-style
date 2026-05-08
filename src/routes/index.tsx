@@ -275,19 +275,19 @@ function Index() {
       <section className="py-20 md:py-28 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-12">
-            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Vantagens</div>
+            <div className="text-hazard font-display font-bold uppercase tracking-widest text-sm mb-2">Vantagens reais</div>
             <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none">
-              Por que <span className="text-hazard">nos escolher</span>
+              6 motivos para parar de adiar e <span className="text-hazard">chamar agora</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
             {[
-              { icon: Award, t: "15+ anos de experiência", d: "Equipe que já viu de tudo, do entupimento simples ao caso mais complexo." },
-              { icon: Users, t: "Equipe uniformizada", d: "Profissionais identificados, educados e treinados para entrar na sua casa." },
-              { icon: Timer, t: "Resposta em minutos", d: "Atendimento ágil. A gente não enrola, chega e resolve." },
-              { icon: ShieldCheck, t: "Garantia escrita", d: "Até 90 dias de garantia em todo serviço executado." },
-              { icon: Sparkles, t: "Limpeza após o serviço", d: "Deixamos o local limpo como estava antes da nossa chegada." },
-              { icon: ThumbsUp, t: "Preço justo", d: "Orçamento transparente, sem taxas escondidas e sem surpresa." },
+              { icon: Award, t: "+15 anos sem improviso", d: "Já desentupimos mais de 10 mil casos. O seu, com certeza, a gente já viu antes." },
+              { icon: Users, t: "Equipe que você reconhece", d: "Técnicos uniformizados, identificados e treinados para entrar na sua casa com respeito." },
+              { icon: Timer, t: "Chega em até 60 minutos", d: "Frota distribuída pela cidade. Quando você liga, alguém já está saindo." },
+              { icon: ShieldCheck, t: "Garantia escrita de 90 dias", d: "Voltou a entupir no mesmo ponto? A gente volta sem custo nenhum." },
+              { icon: Sparkles, t: "Local mais limpo do que estava", d: "Nada de sujeira espalhada. Saímos só depois de higienizar tudo." },
+              { icon: ThumbsUp, t: "Preço fechado antes", d: "Orçamento na hora, por escrito. Sem 'apareceu um extra' no fim." },
             ].map(({ icon: Icon, t, d }) => (
               <div key={t} className="flex gap-4">
                 <div className="w-12 h-12 bg-hazard text-hazard-foreground flex-shrink-0 flex items-center justify-center">
