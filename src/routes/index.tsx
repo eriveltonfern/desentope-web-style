@@ -377,20 +377,21 @@ function Index() {
             }} />
             <div className="relative grid md:grid-cols-[1fr_auto] gap-8 items-center">
               <div>
-                <div className="font-display font-bold uppercase tracking-widest text-sm mb-3">Emergência?</div>
+                <div className="font-display font-bold uppercase tracking-widest text-sm mb-3 inline-flex items-center gap-2"><Zap className="w-4 h-4" /> Atenção: cada hora conta</div>
                 <h2 className="font-display font-black uppercase text-4xl md:text-6xl leading-none">
-                  Não espere o problema piorar.
+                  Hoje é mais barato que amanhã.
                 </h2>
                 <p className="mt-4 text-base md:text-lg max-w-2xl opacity-90">
-                  Quanto mais tempo, maior o estrago. Chame a Nuclear agora e resolva ainda hoje.
+                  Entupimento ignorado vira esgoto na sala, piso estourado e conta triplicada.
+                  Resolva agora — equipe disponível neste exato momento, orçamento na hora e sem taxa de visita.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
-                <a href={TEL} className="inline-flex items-center gap-3 bg-background text-hazard px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:scale-105 transition">
-                  <Phone className="w-5 h-5" /> {PHONE}
+                <a href={WHATS} target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 bg-background text-hazard px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:scale-105 transition" style={{ boxShadow: "var(--shadow-brutal)" }}>
+                  <MessageCircle className="w-5 h-5" /> Quero atendimento agora
                 </a>
-                <a href={WHATS} target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 border-2 border-hazard-foreground px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:bg-hazard-foreground hover:text-hazard transition">
-                  <MessageCircle className="w-5 h-5" /> WhatsApp
+                <a href={TEL} className="inline-flex items-center gap-3 border-2 border-hazard-foreground px-8 py-4 font-display font-black uppercase tracking-wider text-lg hover:bg-hazard-foreground hover:text-hazard transition">
+                  <Phone className="w-5 h-5" /> Ligar: {PHONE}
                 </a>
               </div>
             </div>
