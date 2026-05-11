@@ -111,7 +111,7 @@ function Section({ id, eyebrow, title, accent, children, kicker, className = "" 
   );
 }
 
-function Index() {
+export function Index() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [navOpen, setNavOpen] = useState(false);
 
