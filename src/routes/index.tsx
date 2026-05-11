@@ -259,9 +259,16 @@ function Index() {
                   <Icon className="w-6 h-6" strokeWidth={1.5} />
                 </div>
               </div>
-              <div className="p-6 flex-1">
+              <div className="p-6 flex-1 flex flex-col">
                 <h3 className="font-display font-bold uppercase text-xl mb-2 tracking-wide">{title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1">{desc}</p>
+                <a
+                  href={`https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent(`Olá! Preciso de atendimento para: ${title}.`)}`}
+                  target="_blank" rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 font-display font-bold uppercase tracking-wider text-sm hover:opacity-90 transition"
+                >
+                  <WhatsAppIcon className="w-4 h-4" /> Solicitar pelo WhatsApp
+                </a>
               </div>
             </article>
           ))}
