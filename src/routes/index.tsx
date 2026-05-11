@@ -16,8 +16,8 @@ import {
 } from "lucide-react";
 
 const SITE_URL = "https://desentupidoranuclear.com.br";
-const PHONE = "(31) 99999-0000";
-const WHATS_NUMBER = "5531999990000";
+const PHONE = "(31) 99952-1637";
+const WHATS_NUMBER = "5531999521637";
 const WHATS = `https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent("Olá! Preciso de atendimento de desentupidora.")}`;
 const TEL = `tel:+${WHATS_NUMBER}`;
 
