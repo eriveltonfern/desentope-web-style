@@ -8,7 +8,7 @@ import imgVaso from "@/assets/service-vaso.jpg";
 import imgRalo from "@/assets/service-ralo.jpg";
 import imgFossa from "@/assets/service-fossa.jpg";
 import imgEsgoto from "@/assets/service-esgoto.jpg";
-import imgCamera from "@/assets/service-camera.jpg";
+import imgHidro from "@/assets/service-hidrojato.jpg";
 import {
   Phone, Clock, ShieldCheck, Wrench, Zap, Droplets, Truck,
   CheckCircle2, MapPin, Mail, PhoneCall, Search, Sparkles, ThumbsUp,
