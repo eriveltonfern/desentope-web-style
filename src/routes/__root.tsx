@@ -78,6 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "Builds a responsive, SEO-optimized website for a plumbing company, matching brand aesthetics." },
+      { property: "og:description", content: "Builds a responsive, SEO-optimized website for a plumbing company, matching brand aesthetics." },
+      { name: "twitter:description", content: "Builds a responsive, SEO-optimized website for a plumbing company, matching brand aesthetics." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ded4ae77-9443-4133-a747-a8a890cda677/id-preview-b82e1373--2cf3acc1-109f-408d-a3dd-3b92528c56b9.lovable.app-1778516076943.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ded4ae77-9443-4133-a747-a8a890cda677/id-preview-b82e1373--2cf3acc1-109f-408d-a3dd-3b92528c56b9.lovable.app-1778516076943.png" },
     ],
     links: [
       {
