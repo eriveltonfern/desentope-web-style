@@ -121,7 +121,7 @@ function Index() {
     { img: imgRalo, icon: Zap, title: "Ralo e tubulação", desc: "Hidrojato de alta pressão que limpa por dentro e evita o próximo entupimento." },
     { img: imgFossa, icon: Truck, title: "Caixa de gordura e fossa", desc: "Sucção completa, descarte legal e local higienizado. Adeus mau cheiro." },
     { img: imgEsgoto, icon: ShieldCheck, title: "Esgoto transbordando", desc: "Diagnóstico com câmera + desobstrução da rede principal antes do prejuízo crescer." },
-    { img: imgCamera, icon: Camera, title: "Inspeção com câmera", desc: "Mostramos o problema na sua tela. Nada de orçamento no escuro." },
+    { img: imgHidro, icon: Camera, title: "Hidrojateamento", desc: "Limpeza profunda com jato de alta pressão. Resolve o entupimento e previne o próximo." },
   ];
 
   const faqs = [
