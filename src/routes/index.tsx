@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import logo from "@/assets/logo-nuclear.png";
+import logo from "@/assets/logo-nuclear-full.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import aboutImg from "@/assets/about-team.jpg";
 import imgPia from "@/assets/service-pia.jpg";
@@ -148,9 +148,9 @@ export function Index() {
 
       {/* Header */}
       <header className="border-b border-border sticky top-0 z-40 bg-background/95 backdrop-blur">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between gap-4">
-          <a href="#top" aria-label="Desentupidora Nuclear — Início" className="flex items-center gap-3 shrink-0">
-            <img src={logo} alt="Logo Desentupidora Nuclear" width={240} height={80} className="h-12 sm:h-16 md:h-20 w-auto" decoding="async" />
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between gap-4 relative">
+          <a href="#top" aria-label="Desentupidora Nuclear — Início" className="flex items-center gap-3 shrink-0 mx-auto lg:mx-0">
+            <img src={logo} alt="Logo Desentupidora Nuclear" width={480} height={160} className="h-20 sm:h-24 lg:h-20 w-auto" decoding="async" />
           </a>
           <nav aria-label="Principal" className="hidden lg:flex items-center gap-7 text-sm font-semibold uppercase tracking-wider">
             <a href="#solucoes" className="hover:text-hazard transition">Soluções</a>
@@ -160,9 +160,9 @@ export function Index() {
             <a href="#depoimentos" className="hover:text-hazard transition">Depoimentos</a>
             <a href="#faq" className="hover:text-hazard transition">FAQ</a>
           </nav>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 absolute right-4 top-1/2 -translate-y-1/2 lg:static lg:translate-y-0">
             <a href={WHATS} target="_blank" rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 bg-[#25D366] text-white px-4 md:px-5 py-2.5 font-display font-bold uppercase tracking-wide text-xs md:text-sm hover:scale-105 transition-transform rounded-sm">
+              className="hidden sm:hidden lg:inline-flex items-center gap-2 bg-[#25D366] text-white px-4 md:px-5 py-2.5 font-display font-bold uppercase tracking-wide text-xs md:text-sm hover:scale-105 transition-transform rounded-sm">
               <WhatsAppIcon className="w-4 h-4" /> WhatsApp
             </a>
             <button
@@ -170,7 +170,7 @@ export function Index() {
               aria-label={navOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={navOpen}
               onClick={() => setNavOpen(!navOpen)}
-              className="lg:hidden p-2 border border-border"
+              className="lg:hidden p-2 border border-border bg-background"
             >
               {navOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
